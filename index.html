@@ -19,7 +19,8 @@
         return <h1>App</h1>;
       }
 
-      ReactDOM.render(<App />, document.querySelector("#root"));
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
     </script>
   </body>
 </html>
